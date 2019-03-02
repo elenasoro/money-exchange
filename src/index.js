@@ -2,13 +2,15 @@
 // module.exports =
 
 
-var errorMessage =  {error: "You are rich, my friend! We don't have so much coins for exchange"};
-var empty = {};
-var halfDollars = 0;
-var result = {};
-var rest;
+
 //
 module.exports = function makeExchange(cents) {
+  var errorMessage =  {error: "You are rich, my friend! We don't have so much coins for exchange"};
+  var empty = {};
+  var halfDollars = 0;
+  var result = {};
+  var rest;
+  
     if (cents>10000) {
       return errorMessage
     }
